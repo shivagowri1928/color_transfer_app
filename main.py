@@ -51,12 +51,10 @@ def brighten_image(image):
 def main_loop():
 
     st.title("COLOR CHANGE CHARM🪄")
-    st.text("Color transfer app 📱")
+    st.text("Color transfer app 📱🧙")
 
     source_file = st.file_uploader("Upload Source Image", type=['jpg', 'png', 'jpeg'])
     target_file = st.file_uploader("Upload Target Image", type=['jpg', 'png', 'jpeg'])
-
-    apply_color_transfer = st.button('Winguardium Leviosa🧙')
     if source_file is None:
         return None
 
@@ -65,9 +63,7 @@ def main_loop():
     target_image = Image.open(target_file)
     target_image = np.array(target_image)
 
-
-    if apply_color_transfer:
-        processed_image = color_transfer(source_image, target_image)
+    processed_image = color_transfer(source_image, target_image)
 
     st.image(processed_image)
 
