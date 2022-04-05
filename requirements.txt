@@ -2,3 +2,6 @@ numpy
 streamlit
 opencv-python 
 Pillow
+ERROR: Could not install packages due to an OSError: [WinError 5] Access is denied: 'C:\\Users\\Likhith\\AppData\\Local\\Temp\\pip-uninstall-35h0xbu7\\pip.exe'
+Check the permissions.
+pip == 22.0.3
