@@ -43,10 +43,6 @@ def image_stats(image):
 	# return the color statistics
 	return (lMean, lStd, aMean, aStd, bMean, bStd)
 
-def brighten_image(image):
-    img_bright = cv2.convertScaleAbs(image)
-    return img_bright
-
 
 def main_loop():
 
